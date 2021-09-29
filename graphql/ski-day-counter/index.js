@@ -20,8 +20,18 @@ const typeDefs = gql`
 		THIN
 	}
 
+	input AddDayInput{
+		date: String!
+		mountain: String
+		conditions: Conditions
+	}
+
 	type Mutation{
 		removeDay(id: ID!): SkiDay!
+	}
+
+	type Mutation{
+		addDay(input: AddDayInput!): SkiDay
 	}
 `;
 

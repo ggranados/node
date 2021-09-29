@@ -73,3 +73,24 @@ mutation($removeDayId: ID!){
   "removeDayId": "3"
 }
 ```
+
+### Input Types
+```
+mutation($addDayInput: AddDayInput!){
+  addDay(input: $addDayInput) {
+    date
+    mountain
+    conditions
+  }
+}
+
+#variables
+{
+  "addDayInput": {
+    "date": "1/2/2025",
+    "mountain": "Alpine Meadows",
+    "conditions": "ICE"
+  }
+}
+
+```
