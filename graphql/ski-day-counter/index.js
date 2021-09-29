@@ -28,9 +28,6 @@ const typeDefs = gql`
 
 	type Mutation{
 		removeDay(id: ID!): SkiDay!
-	}
-
-	type Mutation{
 		addDay(input: AddDayInput!): SkiDay
 	}
 `;
