@@ -119,3 +119,18 @@ mutation{
 }
 
 ```
+
+### Custom Object
+```
+mutation{
+  removeDay(id: "2") {
+    day {
+      mountain
+      date
+    }
+    totalBefore
+    totalAfter
+  }
+}
+
+```
