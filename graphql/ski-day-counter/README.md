@@ -134,3 +134,14 @@ mutation{
 }
 
 ```
+
+###  Schema mocks
+```
+query ExampleQuery {
+  allDays {
+    date
+    mountain
+    conditions
+  }
+}
+```
