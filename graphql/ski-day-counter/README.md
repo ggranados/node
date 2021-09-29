@@ -20,3 +20,13 @@ npm install graphql apollo-server nodemon
 ```
 npn start
 ```
+
+## Query Examples
+
+### totalDays
+```
+query ExampleQuery {
+  totalDays
+}
+```
+
