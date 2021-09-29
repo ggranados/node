@@ -42,3 +42,17 @@ query ExampleQuery {
 }
 
 ``` 
+
+### Enum Type
+```
+query ExampleQuery {
+  totalDays
+  allDays {
+    id
+    date
+    mountain
+    conditions
+  }
+}
+
+```
