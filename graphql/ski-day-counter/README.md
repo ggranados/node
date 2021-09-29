@@ -30,3 +30,15 @@ query ExampleQuery {
 }
 ```
 
+### Custom object
+```
+query ExampleQuery {
+  totalDays
+  allDays {
+    id
+    date
+    mountain
+  }
+}
+
+``` 
