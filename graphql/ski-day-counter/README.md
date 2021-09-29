@@ -145,3 +145,12 @@ query ExampleQuery {
   }
 }
 ```
+
+### Subscription
+```
+subscription{
+  newDay {
+    conditions
+  }
+}
+```

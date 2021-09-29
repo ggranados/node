@@ -45,6 +45,10 @@ const typeDefs = gql`
 		removeDay(id: ID!): RemoveDayPayload!
 		addDay(input: AddDayInput!): SkiDay
 	}
+
+	type Subscription{
+		newDay: SkiDay!
+	}
 `;
 
 /*
