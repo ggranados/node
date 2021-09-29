@@ -56,3 +56,20 @@ query ExampleQuery {
 }
 
 ```
+
+### Mutation
+```
+mutation($removeDayId: ID!){
+  removeDay(id: $removeDayId) {
+    date
+    id
+    mountain
+  }
+}
+
+#variables
+
+{
+  "removeDayId": "3"
+}
+```

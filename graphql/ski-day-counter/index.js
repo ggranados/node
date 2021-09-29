@@ -20,6 +20,9 @@ const typeDefs = gql`
 		THIN
 	}
 
+	type Mutation{
+		removeDay(id: ID!): SkiDay!
+	}
 `;
 
 /*
