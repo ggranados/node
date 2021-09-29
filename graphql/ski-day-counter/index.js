@@ -9,10 +9,17 @@ const typeDefs = gql`
 
 	scalar Date
 
+	"""
+	And Object that describes the characteristics of a SkiDay
+	"""
 	type SkiDay{
+		"A ski day´s unique identifier"
 		id: ID!
+		"The date that a ski day occurred"
 		date: Date!
+		"Location where a ski day occurred"
 		mountain: String!
+		"The shape that the snow was in when this ski day happened"
 		conditions: Conditions
 	}
 
