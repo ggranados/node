@@ -1,0 +1,18 @@
+let buffer1 = Buffer.alloc(100);
+buffer1.write("Node Buffer Global Class");
+console.log(`${buffer1.toString('utf-8')}`)
+console.log(`${buffer1.length}`)
+
+let bufferSrc = Buffer.from("Happy");
+
+let bufferDest = Buffer.alloc(10);
+bufferSrc.copy(bufferDest)
+
+console.log(`${bufferDest.toString()}`)
+
+let buffer2 = Buffer.from("Happy");
+let buffer3 = Buffer.from(" Learning");
+
+let concatedBuffer = Buffer.concat([buffer2, buffer3]);
+
+console.log(concatedBuffer.toString());
