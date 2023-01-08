@@ -1,7 +1,12 @@
 let palindrome = require("../src/palindrome_checker");
 
-var result = palindrome.checker("anitalavalatina")
+let word; 
+let result;
+
+word = "anitalavalatina";
+result = palindrome.checker(word)
 console.assert(result==true,`Check result ${result} is not correct, expected ${true}`);
 
-result = palindrome.checker("asdrwer");
+word = "asdrwer";
+result = palindrome.checker(word);
 console.assert(result==false,`Check result ${result} is not correct, expected ${false}`);
